@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Overpass';
+    font-size: 15px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+/* REVIEW PAGE CSS */
+#review-page{
+    display: flex;
+}
+
+#rating-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 375px;
+    padding: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: hsl(214, 28%, 16%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+img#icon-star{
+    padding: 3%;
+    border-radius: 50%;
+    background-color: hsla(220, 4%, 31%, 0.305);
+}
+
+#rating-card h2{
+    font-size: 1.7rem;
+    margin-bottom: 2%;
+}
+
+.message{
+    font-size: 1rem;
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+#ratings{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    background-color: hsl(217, 17%, 21%);
+}
+.num:hover{
+    cursor: pointer;
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+.selnum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    background-color: hsl(25, 97%, 53%);
+}
+.selnum:hover{
+    cursor: pointer;   
+}
+
+button{
+    margin-top: 20px;
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    background-color: hsl(25, 97%, 53%);
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+/* THANKYOU PAGE CSS */
+#thankyou-page{
+    display: none;
+}
+
+#thank-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    padding: 25px;
+    background-color: hsl(214, 28%, 16%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+#thank-card img{
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#thank-card p#rate-cmt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 40px;
+    border-radius: 30px;
+    color:  hsl(25, 97%, 53%);
+    background-color: hsla(220, 4%, 31%, 0.305);
+}
+#thank-card h2{
+    font-size: 1.7rem;
+}
+#thank-card p#thanking{
+    text-align: center;
+    color:  hsl(217, 12%, 63%);
+    line-height: 150%;
+}

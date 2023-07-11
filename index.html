@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="review-page">
+    <div id="rating-card">
+      <img id="icon-star" src="./images/icon-star.svg" alt="a star">
+      <h2>How did we do?</h2>
+      <p class="message">Please let us know how we did with your 
+        support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+        <div id="ratings">
+          <div id="n1" class="num" onclick="clicked(this)">1</div>
+          <div id="n2" class="num" onclick="clicked(this)">2</div>
+          <div id="n3" class="num" onclick="clicked(this)">3</div>
+          <div id="n4" class="num" onclick="clicked(this)">4</div>
+          <div id="n5" class="num" onclick="clicked(this)">5</div>
+        </div><!--RATING NUMBERS-->
+        <button onclick="pageChange()">S U B M I T</button>
+    </div><!--RATING CARD-->
+  </div><!--REVIEW PAGE-->
+
+  <div id="thankyou-page">
+    <div id="thank-card">
+      <img src="./images/illustration-thank-you.svg" alt="Thank You">
+    <p id="rate-cmt"></p>
+    <h2>Thank you!</h2>
+    <p id="thanking">  We appreciate you taking the time to give a 
+      rating. If you ever need more support, don’t 
+      hesitate to get in touch!
+    </p>
+    </div><!--THANKYOU CARD-->
+  </div><!--THANKYOU PAGE-->
+
+</body>
+</html>
